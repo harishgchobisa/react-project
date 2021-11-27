@@ -1,0 +1,3 @@
+.expenses-dashboard .expensesList .card{margin: 20px 0;}
+.expensesList__expenses{display: flex; justify-content: space-between; align-items: center;}
+.expensesList__expenses .expenses_amount{background: #20c997; padding: 10px 20px; border-radius: 5px; font-size: 18px; font-weight: 500; color: #fff;}
