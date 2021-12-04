@@ -1,7 +1,9 @@
+import React from 'react';
+
 import Card from "../Card/Card";
 import Expenses from "./Expenses";
 
-function ExpensesList() {
+const ExpensesList = () =>{
   const expensesData = [
     {
       id: "1",

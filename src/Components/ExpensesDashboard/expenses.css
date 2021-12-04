@@ -1,3 +1,10 @@
+*{outline: none;}
+.expensesList .card .expenses_right_section,
+.expensesList .card:hover .expenses_right_section{transition:.27s ease-in-out;-webkit-transition:.27s ease-in-out;-moz-transition:.27s ease-in-out;-ms-transition:.27s ease-in-out;-o-transition:.27s ease-in-out;}
+.btn:focus, .btn:active{box-shadow: none !important;}
 .expenses-dashboard .expensesList .card{margin: 20px 0;}
-.expensesList__expenses{display: flex; justify-content: space-between; align-items: center;}
+.expensesList__expenses{display: flex; justify-content: space-between; align-items: center; overflow: hidden;}
+.expensesList__expenses .expenses_right_section{display: flex; justify-content: space-between; align-items: center; margin-right: -80px;}
 .expensesList__expenses .expenses_amount{background: #20c997; padding: 10px 20px; border-radius: 5px; font-size: 18px; font-weight: 500; color: #fff;}
+.expensesList__expenses .expenses_right_section .btn.btn-danger{margin-left: 10px; }
+.expensesList .card:hover .expenses_right_section{margin-right: 0;}
