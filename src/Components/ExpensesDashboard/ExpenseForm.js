@@ -2,18 +2,30 @@ import React, {useState} from "react";
 import Card from "../Card/Card";
 
 const ExpenseForm = (props) => {
-  const [expenseName , setExpenseName] = useState(props.name);
-  const [expenseAount , setExpenseAount] = useState(props.amount);
-  const [expenseDate , setExpenseDate] = useState(props.name);
+  // const [expenseName , setExpenseName] = useState(props.name);
+  // const [expenseAount , setExpenseAount] = useState(props.amount);
+  // const [expenseDate , setExpenseDate] = useState(props.name);
+
+  const [userInput, setUserInput] = useState({
+    enterTitle: '',
+    enterAmount: '',
+    enterDate: ''
+  });
 
   const expenseNameHandler = (event) => {
-    setExpenseName(event.target.value);
+    setUserInput((prevState) => {
+      return {...prevState, enterTitle: event.target.value}
+    });
   }
   const expenseAmountHandler = (event) => {
-    setExpenseAount(event.target.value);
+    setUserInput((prevState) => {
+      return {...prevState, enterAmount: event.target.value}
+    });
   }
   const expenseDateHandler = (event) => {
-    setExpenseDate(event.target.value);
+    setUserInput((prevState) => {
+      return {...prevState, enterDate: event.target.value}
+    });
   }
  
   const formSubmit = () => {
